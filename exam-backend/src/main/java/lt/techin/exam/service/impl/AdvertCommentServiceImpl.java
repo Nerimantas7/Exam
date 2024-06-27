@@ -1,15 +1,19 @@
 package lt.techin.exam.service.impl;
 
+import lombok.AllArgsConstructor;
 import lt.techin.exam.dto.AdvertCommentDto;
 import lt.techin.exam.entity.AdvertComment;
 import lt.techin.exam.exception.ResourceNotFoundException;
 import lt.techin.exam.mapper.AdvertCommentMapper;
 import lt.techin.exam.repository.AdvertCommentRepository;
 import lt.techin.exam.service.AdvertCommentService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
+@AllArgsConstructor
 public class AdvertCommentServiceImpl implements AdvertCommentService {
 
     private AdvertCommentRepository advertCommentRepository;
