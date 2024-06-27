@@ -13,7 +13,7 @@ public interface AdvertService {
 
     List<AdvertDto> getAllAdverts();
 
-    AdvertDto updateAdvert(Long advertId, AdvertDto advertDto);
+    AdvertDto updateAdvert(Long advertId, AdvertDto updatedAdvert);
 
     void deleteAdvert(long advertId);
 }

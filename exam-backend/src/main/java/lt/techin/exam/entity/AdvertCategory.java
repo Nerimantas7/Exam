@@ -18,7 +18,7 @@ public class AdvertCategory {
     private Long id;
 
     @Column(name = "category_name", nullable = false, unique = true)
-    private String bookCategory;
+    private String advertCategory;
 
     @Column(name = "category_description")
     private String categoryDescription;
