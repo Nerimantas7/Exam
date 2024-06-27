@@ -1,5 +1,6 @@
 package lt.techin.exam.service.impl;
 
+import lombok.AllArgsConstructor;
 import lt.techin.exam.dto.AdvertCategoryDto;
 import lt.techin.exam.dto.AdvertDto;
 import lt.techin.exam.entity.AdvertCategory;
@@ -7,10 +8,13 @@ import lt.techin.exam.exception.ResourceNotFoundException;
 import lt.techin.exam.mapper.AdvertCategoryMapper;
 import lt.techin.exam.repository.AdvertCategoryRepository;
 import lt.techin.exam.service.AdvertCategoryService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
+@AllArgsConstructor
 public class AdvertCategoryServiceImpl implements AdvertCategoryService {
 
     private AdvertCategoryRepository advertCategoryRepository;
